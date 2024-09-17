@@ -1,0 +1,91 @@
+.contenedor {
+    background-color: aquamarine;
+    padding: 10px;
+    font-size: 25px;
+    display: grid;
+    grid-gap: 10px;
+    text-align: center;
+    /*grid-template-columns: 150px 150px 250px;
+    grid-template-rows: 150px 250px 100px 50px 20px;*/
+    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+    /*grid-template-rows: 100px 1fr 6fr 1fr;*/
+    /*grid-template-columns: repeat(8,1fr);*/
+    /*grid-template-rows: repeat(3,200px);*/
+    grid-template-columns: 3fr 8fr 3fr;
+    grid-template-rows: 2fr 14fr 2fr;
+    grid-template-areas: "header ";
+}
+.contenedor>div{
+    background-color: greenyellow;
+}
+
+.contenedor .a1{
+    background-color: yellow;
+    grid-column: 1/4;
+}
+
+.contenedor .a2{
+    background-color: burlywood;
+    grid-column: 1/1;
+}
+
+.contenedor .a3{
+    background-color: slategrey;
+    grid-column: 2/3;
+}
+
+.contenedor .a4{
+    background-color: burlywood;
+    grid-column: 3/4;
+}
+
+.contenedor .a5{
+    background-color: darksalmon;
+    grid-column: 1/4;
+}
+
+.a2 {
+    display: grid;
+    grid-gap: 5px;
+    font-size: 15px;
+}
+
+.a3{
+    display: grid;
+    grid-gap: 5px;
+    font-size: 15px;
+}
+
+.a2 .side1-1{
+    background-color: burlywood;
+    grid-row: 1/1;
+}
+
+.a2 .side1-2{
+    background-color: salmon;
+    grid-row: 2/2;
+}
+.a2 .side1-3{
+    background-color: azure;
+    grid-row: 3/3;
+}
+
+.a3 .texto1{
+    background-color: slategrey;
+    grid-column: 1/4;
+}
+
+.a3 .texto2{
+    background-color: coral;
+    grid-column: 1/1;
+}
+
+.a3 .texto3{
+    background-color: thistle;
+    grid-column: 2/3;
+}
+
+.a3 .texto4{
+    background-color: darkseagreen;
+    grid-column: 3/3;
+}
